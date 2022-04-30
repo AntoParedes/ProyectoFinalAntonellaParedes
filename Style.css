@@ -29,6 +29,7 @@ header {
 
 fieldset {
     margin-top: 20px;
+    margin-left: 50px
 }
 
 #btn-menu {
@@ -89,9 +90,17 @@ body {
 }
 
 .opinions {
-    background-color: #c8b6ffa1;
+    text-align: center;
+    background: rgb(200,182,255);
+    background: linear-gradient(188deg, rgba(200,182,255,1) 22%, rgba(255,214,255,1) 53%, rgba(200,182,255,1) 88%);
 }
 
+.caja:hover{
+    transform: scale(1.5);
+    transition-property:all;
+    transition-duration: 3s;
+
+}
 .parrafoIndex {
     background-color: #c8b6ffa1;
     text-align: center;
@@ -103,7 +112,11 @@ fieldset {
     box-sizing: border-box;
     display: inline-block;
 }
-
+legend{
+    background: rgb(200,182,255);
+    background: linear-gradient(188deg, rgba(200,182,255,1) 22%, rgba(255,214,255,1) 53%, rgba(200,182,255,1) 88%);
+    font-style: italic;
+}
 .contenedor {
     width: 100%;
     padding: 15px;
@@ -235,12 +248,12 @@ footer {
 .titleProductos {
     display: flex;
     width: 100%;
-    background-color: #c8b6ff;
+    background: rgb(200,182,255);
+    background: linear-gradient(188deg, rgba(200,182,255,1) 22%, rgba(255,214,255,1) 53%, rgba(200,182,255,1) 88%);
     text-align: center;
     justify-content: center;
-
+    
 }
-
 .listaProductos {
     width: 100%;
     display: flex;
@@ -279,7 +292,8 @@ footer {
 
 .bodysTitle,
 .setsTitle {
-    background-color: #c8b6ff;
+    background: rgb(200,182,255);
+    background: linear-gradient(188deg, rgba(200,182,255,1) 22%, rgba(255,214,255,1) 53%, rgba(200,182,255,1) 88%);
     text-align: center;
     margin-bottom: 10px;
 }
