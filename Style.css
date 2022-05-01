@@ -339,6 +339,7 @@ footer {
         width: 70%;
         margin-left: -70%;
         transition: all 0.5s;
+        z-index:calc(1);
     }
 
     .menu ul {
