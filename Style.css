@@ -182,13 +182,9 @@ input[type="password"] {
     color: #0b525b;
 }
 
-.ulCarrousel {
-    display: flex;
-    width: 100%;
-}
-
-.ulCarrousel img {
-    width: 25%;
+.tamañoCarousel{
+    width: 300px;
+    height: 500px;
 }
 
 footer {
