@@ -229,18 +229,6 @@ footer {
     justify-content: center;
 }
 
-.seccionProductos {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
-.seccionProductos .imgProd {
-    width: 393px;
-    height: 500px;
-}
-
 .titleProductos {
     display: flex;
     width: 100%;
@@ -250,14 +238,6 @@ footer {
     justify-content: center;
     
 }
-.listaProductos {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 
 .seccionDatos {
     display: flex;
@@ -277,15 +257,6 @@ footer {
 
 }
 
-.productos {
-    margin: 20px;
-}
-
-.masvendidosPpal {
-    display: flex;
-    flex-direction: column;
-}
-
 .bodysTitle,
 .setsTitle {
     background: rgb(200,182,255);
@@ -300,24 +271,6 @@ footer {
     justify-content: flex-end;
 }
 
-.imgsBody,
-.imgsSet {
-    width: 393px;
-    height: 500px;
-
-}
-
-.contenedorBodys,
-.contenedorSets {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.gridContenedor {
-    display: grid;
-    grid-template-rows: repeat(4, auto-fit);
-    grid-template-columns: auto;
-}
 
 /* Media Queries */
 
@@ -351,6 +304,11 @@ footer {
 
     }
 
+    /* nav */
+     header label{
+        height: 50px;
+        width: 50px;
+    }
     /* index */
     .tittlePag {
         font-size: 30px;
@@ -387,69 +345,6 @@ footer {
     .divMap {
         order: 0;
     }
-
-    /* SECCION PRODUCTOS */
-
-    .seccionProductos {
-        width: 100%;
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-    }
-
-    .listaProductos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .productos {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #Photo {
-        width: 293px;
-        height: 400px;
-    }
-
-    .nombreProducto,
-    .valorPrecio {
-        justify-content: center;
-    }
-
-    /* mas vendidos */
-    .masvendidosPpal {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-
-    }
-
-    .contenedorBodys,
-    .contenedorSets {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-    .imgsBody,
-    .imgsSet {
-        width: 293px;
-        height: 400px;
-    }
-
-    .bodysTitle,
-    .setsTitle {
-        display: flex;
-        justify-content: center;
-        background-color: #c8b6ff;
-        margin-bottom: 10px;
-    }
-
     /* Contacto */
     .formCtc {
         margin-left: 15px;
