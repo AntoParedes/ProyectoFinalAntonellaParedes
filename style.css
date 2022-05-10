@@ -211,10 +211,18 @@ footer {
 
 .imgRedes {
     align-items: right;
-    height: 70px;
-    width: 150px;
 }
-
+.fa-instagram, .fa-twitter, .fa-whatsapp{
+    font-size: 40px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #FFD6FF;
+}
+.fa-instagram:hover, .fa-twitter:hover, .fa-whatsapp:hover{
+transform: scale(1.5);
+    transition-property: all;
+    transition-duration: 3s;
+}
 .copyRight {
     display: flex;
     padding-top: 200px;
@@ -362,6 +370,7 @@ footer {
     }
 
     /* footer */
+
     .footerContainer {
         display: flex;
         width: 100%;
