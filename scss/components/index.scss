@@ -1,0 +1,82 @@
+@import '../base/variables';
+@import '../base/mediaquerys';
+
+.botonregist {
+    text-align: right;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #c8b6ff;
+            display: inline-block;
+            &:hover{
+                cursor: pointer;
+                background: rgba(0, 0, 0, 3);
+            }
+        
+        }
+    }
+}
+
+main {
+
+    .tittlePag {
+        text-align: center;
+        color: #0b525b;
+        font-size: 40px;
+        margin-top: 20px;
+        @include mobile{
+            font-size: 30px;
+        }
+    }
+
+    .parrafoIndex {
+        background-color: #c8b6ffa1;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .tamañoCarousel {
+        width: 300px;
+        height: 500px;
+    }
+}
+/* mixin */
+#Opiniones {
+    @include mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .opinions {
+        text-align: center;
+        background: $bgColortitulos;
+        font-style: $fontStyletitulos;
+        width: 100%;
+        @include mobile{
+            background-color: #c8b6ff;
+            width: 100%;
+            display: flex;
+            justify-content: center
+        }
+        
+    }
+    .caja {
+        height: 200px;
+        width: 300px;
+
+        &:hover {
+            transform: scale(1.5);
+            transition-property: all;
+            transition-duration: 3s;
+        }
+    }
+
+}

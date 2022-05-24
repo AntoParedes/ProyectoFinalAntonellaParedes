@@ -1,0 +1,43 @@
+@import '../base/variables';
+@import '../base/mapas';
+.titleProductos {
+    display: flex;
+    width: 100%;
+    background: $bgColortitulos;
+    font-style: $fontStyletitulos;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.marginCards {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    .tamañoCard {
+        height: 250px;
+        width: auto;
+    }
+
+}
+/* Agrego mapa */
+.botonColor {
+    background: map-get($boton, botoncolor);
+    font-style: map-get($boton, fontStyle );
+    border: map-get($boton, border );
+}
+
+section {
+    .acordeonProductos {
+        margin-top: 30px;
+
+        .bgBoton {
+            background-color: #ffd6ff9a;
+        }
+
+        .bgBoton2 {
+            background-color: rgba(255, 214, 255, 0.568);
+        }
+    }
+}

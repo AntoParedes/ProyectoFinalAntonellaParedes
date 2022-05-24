@@ -1,0 +1,43 @@
+@import '../base/variables';
+
+section{
+    .formCtc{
+        margin-top: 20px;
+        margin-left: 2%;
+        align-items: center;
+        box-sizing: border-box;
+        display: inline-block;
+        legend{
+        background: $bgColortitulos;
+        font-size: $fontStyletitulos;
+        }
+
+        @media only screen and (max-width: 640px)
+        {
+            margin-left: 50px;
+        }
+    }
+
+    form{
+        
+        div{
+            input[type="text"]{
+                font-size: 20px;
+                width: 82%;
+                padding: 10px;
+                border: none;
+            }
+            input[type="password"]{
+                font-size: 20px;
+                width: 82%;
+                padding: 10px;
+                border: none;
+            }
+            
+        }
+    }
+
+
+
+
+}
