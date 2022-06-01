@@ -5,16 +5,12 @@ header {
   /*  encabezado zona navegable-*/
 }
 header .botonlogo {
-  display: flex;
-  justify-content: center;
   /* extend */
   background-color: #FFD6FF;
 }
 header .imgLogo {
-  width: 350px;
-  height: 400px;
-  margin-top: -80px;
-  margin-bottom: -70px;
+  width: 450px;
+  height: 350px;
 }
 header #btn-menu {
   display: none;
@@ -110,6 +106,7 @@ body {
   margin: 0;
   margin-bottom: 20px;
   width: 100%;
+  /* z-index: 0; */
 }
 .botonregist li a {
   text-decoration: none;

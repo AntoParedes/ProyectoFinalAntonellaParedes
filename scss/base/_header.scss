@@ -3,17 +3,13 @@ header {
     background: #c8b6ff;
 
     .botonlogo {
-        display: flex;
-        justify-content: center;
         /* extend */
         @extend %flex;
         background-color: #FFD6FF;
     }
     .imgLogo{
-        width: 350px;
-        height: 400px;
-        margin-top: -80px;
-        margin-bottom: -70px;
+        width: 450px;
+        height: 350px;
     }
     /*  encabezado zona navegable-*/
     #btn-menu {
