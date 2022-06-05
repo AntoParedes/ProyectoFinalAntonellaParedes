@@ -110,6 +110,7 @@ body {
   margin: 0;
   margin-bottom: 20px;
   width: 100%;
+  /* z-index: 0; */
 }
 .botonregist li a {
   text-decoration: none;
@@ -377,6 +378,11 @@ section .setsTitle {
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.central {
+  display: flex;
+  justify-content: center;
 }
 
 .marginCards {
