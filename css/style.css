@@ -99,6 +99,10 @@ body {
   margin: 0;
 }
 
+.disclaimer {
+  display: none;
+}
+
 .botonregist {
   text-align: right;
   list-style-type: none;
