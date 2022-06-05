@@ -165,14 +165,64 @@ main .tamañoCarousel {
     justify-content: center;
   }
 }
-#Opiniones .caja {
-  height: 200px;
-  width: 300px;
-}
 #Opiniones .caja:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   transition-property: all;
   transition-duration: 3s;
+}
+
+.testimonials {
+  padding: 40px 0;
+  background: #c8b6ff;
+  color: #434343;
+  text-align: center;
+}
+.testimonials .inner {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+.testimonials .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.testimonials .col {
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonials .testimonial {
+  background: #FFD6FF;
+  padding: 30px;
+}
+.testimonials .testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.testimonials .testimonial .name {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.testimonials .testimonial .stars {
+  color: #6ab04c;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 960px) {
+  .testimonials .col {
+    flex: 100%;
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .testimonials .col {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 header .botonlogo {
@@ -187,7 +237,7 @@ header .botonlogo {
   width: 100%;
   height: 100%;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 1px;
   /* COPYRIGHT */
   /* IMAGENES REDES */
 }
@@ -200,6 +250,7 @@ header .botonlogo {
 }
 .footerContainer .divMap {
   padding-bottom: 70px;
+  margin-left: 30px;
 }
 @media only screen and (max-width: 640px) {
   .footerContainer .divMap {
@@ -219,48 +270,51 @@ header .botonlogo {
     margin-bottom: 50px;
   }
 }
-.footerContainer .imgRedes .fa-instagram {
-  font-size: 40px;
+.footerContainer .imgRedes {
+  margin-right: 20px;
+}
+.footerContainer .imgRedes .botonFooter {
   margin-left: 10px;
   text-decoration: none;
+  list-style: none;
   color: #FFD6FF;
 }
-.footerContainer .fa-twitter {
-  font-size: 40px;
-  margin-left: 10px;
+.footerContainer .imgRedes .botonFooter .linkRedes {
   text-decoration: none;
-  color: #FFD6FF;
-}
-.footerContainer .fa-whatsapp {
-  font-size: 40px;
-  margin-left: 10px;
-  text-decoration: none;
-  color: #FFD6FF;
 }
 
-section .formCtc {
+.sectionCtct {
+  display: flex;
+  justify-content: center;
+}
+.sectionCtct .formCtc {
+  width: 60%;
   margin-top: 20px;
   margin-left: 2%;
   align-items: center;
   box-sizing: border-box;
   display: inline-block;
 }
-section .formCtc legend {
+.sectionCtct .formCtc legend {
   background: rgb(200, 182, 255) linear-gradient(188deg, rgb(200, 182, 255) 22%, rgb(255, 214, 255) 53%, rgb(200, 182, 255) 88%);
   font-size: italic;
 }
 @media only screen and (max-width: 640px) {
-  section .formCtc {
-    margin-left: 50px;
+  .sectionCtct .formCtc {
+    margin-left: 10px;
   }
 }
-section form div input[type=text] {
+.sectionCtct form {
+  display: flex;
+  flex-direction: column;
+}
+.sectionCtct form div input[type=text] {
   font-size: 20px;
   width: 82%;
   padding: 10px;
   border: none;
 }
-section form div input[type=password] {
+.sectionCtct form div input[type=password] {
   font-size: 20px;
   width: 82%;
   padding: 10px;

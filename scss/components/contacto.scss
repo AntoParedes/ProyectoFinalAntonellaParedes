@@ -1,7 +1,10 @@
 @import '../base/variables';
 
-section{
+.sectionCtct{
+    display: flex;
+   justify-content: center;
     .formCtc{
+        width: 60%;
         margin-top: 20px;
         margin-left: 2%;
         align-items: center;
@@ -14,12 +17,13 @@ section{
 
         @media only screen and (max-width: 640px)
         {
-            margin-left: 50px;
+            margin-left: 10px;
         }
     }
 
     form{
-        
+        display: flex;
+        flex-direction: column;
         div{
             input[type="text"]{
                 font-size: 20px;

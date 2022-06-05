@@ -1,14 +1,13 @@
 @import '../base/extends';
 
 .footerContainer {
-
     background-color: #c8b6ff;
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 100%;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 1px;
 
     @media only screen and (max-width: 640px) {
         display: flex;
@@ -18,7 +17,7 @@
 
     .divMap {
         padding-bottom: 70px;
-
+        margin-left: 30px;
         @media only screen and (max-width: 640px) {
 
             order: 0;
@@ -43,25 +42,15 @@
 
     /* IMAGENES REDES */
     .imgRedes {
-    .fa-instagram {
-            font-size: 40px;
+        margin-right: 20px;
+    .botonFooter {
             margin-left: 10px;
             text-decoration: none;
+            list-style: none;
             color: #FFD6FF;
+            .linkRedes{
+                text-decoration: none;
+            }
         }
-    }
-
-    .fa-twitter {
-        font-size: 40px;
-        margin-left: 10px;
-        text-decoration: none;
-        color: #FFD6FF;
-    }
-
-    .fa-whatsapp {
-        font-size: 40px;
-        margin-left: 10px;
-        text-decoration: none;
-        color: #FFD6FF;
     }
 }
